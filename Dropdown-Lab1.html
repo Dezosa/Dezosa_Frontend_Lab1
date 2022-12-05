@@ -1,0 +1,89 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+ul {  
+  list-style-type: none;  
+  margin: 0;  
+  padding: 0;  
+  overflow: hidden;  
+  background-color: lightgray;  
+}  
+  
+li {  
+  float: left;  
+}  
+  
+li a, .dropbtn {  
+  display: inline-block;  
+  color: blue;  
+ font-size:20px;  
+  text-align: center;  
+  padding: 10px 20px;  
+  text-decoration: none;  
+}  
+.active{  
+background-color: gray;  
+color: white;  
+}  
+li a:hover , .dropdown:hover .dropbtn{  
+  background-color: orange;  
+  color: white;  
+}  
+  
+.dropdown-content {  
+  display: none;  
+  position: absolute;  
+  background-color: lightblue;  
+  min-width: 160px;  
+  box-shadow: 5px 8px 10px 0px black;  
+ }  
+  
+.dropdown-content a {  
+  color: black;  
+  padding: 12px 16px;  
+  text-decoration: none;  
+  display: block;  
+  text-align: left;  
+}  
+  
+.dropdown-content a:hover {  
+background-color: gray;  
+color:white;  
+}  
+  
+.dropdown:hover .dropdown-content {  
+  display: block;  
+}  
+h1,h2,h3{  
+text-align:center;   
+color: rgb(3, 3, 3);  
+}  
+</style>  
+</head>  
+<body>  
+    <h2 style="background-color: red;">Demo of Dropdown</h2>
+<ul>    
+  <li><a href="#">Link1</a></li>  
+  
+  <li class="dropdown">  
+    <a href="#" class="dropbtn">Link2</a>  
+    <div class="dropdown-content">  
+      <a href="#">DD_Link_1</a>  
+      <a href="#">DD_Link_2`</a>  
+      <a href="#">DD_Link_3</a>  
+    </div>  
+  </li>  
+
+  <li class="dropdown">  
+    <a href="#" class="dropbtn">Link3</a>  
+    <div class="dropdown-content">  
+      <a href="#">DD_Link_1</a>  
+      <a href="#">DD_Link_2`</a>  
+      <a href="#">DD_Link_3</a>  
+    </div>  
+  </li>  
+</ul>  
+    
+</body>  
+</html>  
